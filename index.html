@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Prep Books</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Interview Prep Books</h1>
+            <p class="subtitle">Pick a guide and start revising</p>
+            
+            <div class="legend">
+                <span class="legend-item"><span class="dot rust-dot"></span> Systems</span>
+                <span class="legend-item"><span class="dot js-dot"></span> Frontend / Fullstack</span>
+                <span class="legend-item"><span class="dot java-dot"></span> Backend / Enterprise</span>
+                <span class="legend-item"><span class="dot docker-dot"></span> DevOps / Infra</span>
+                <span class="legend-item"><span class="dot kafka-dot"></span> Streaming / Data</span>
+            </div>
+        </header>
+
+        <main class="grid">
+            <!-- JS/TS Card -->
+            <a href="js-ts-qa/book/index.html" class="card js-card">
+                <div class="card-content">
+                    <h2>JS / TypeScript</h2>
+                    <div class="badge-row">
+                        <span class="badge js-badge">FRONTEND</span>
+                        <span class="count">16 questions</span>
+                    </div>
+                    <p>Closures, hoisting, event loop, type guards, utility types, React hooks, and more.</p>
+                </div>
+            </a>
+
+            <!-- Kafka Card -->
+            <a href="kafka-qa/book/index.html" class="card kafka-card">
+                <div class="card-content">
+                    <h2>Apache Kafka</h2>
+                    <div class="badge-row">
+                        <span class="badge kafka-badge">STREAMING</span>
+                        <span class="count">20 questions</span>
+                    </div>
+                    <p>Brokers, partitions, consumer groups, replication, exactly-once semantics, Connect, and monitoring.</p>
+                </div>
+            </a>
+
+            <!-- Docker Card -->
+            <a href="docker-qa/book/index.html" class="card docker-card">
+                <div class="card-content">
+                    <h2>Docker</h2>
+                    <div class="badge-row">
+                        <span class="badge docker-badge">DEVOPS</span>
+                        <span class="count">20 questions</span>
+                    </div>
+                    <p>Containers vs VMs, Dockerfiles, networking, volumes, Compose, security, and Kubernetes comparison.</p>
+                </div>
+            </a>
+
+            <!-- Rust Card -->
+            <a href="rust-qa/book/index.html" class="card rust-card">
+                <div class="card-content">
+                    <h2>Rust</h2>
+                    <div class="badge-row">
+                        <span class="badge rust-badge">SYSTEMS</span>
+                        <span class="count">4 questions</span>
+                    </div>
+                    <p>Ownership, borrowing, error handling, pattern matching.</p>
+                </div>
+            </a>
+
+            <!-- Java Card -->
+            <a href="java-qa/book/index.html" class="card java-card">
+                <div class="card-content">
+                    <h2>Java</h2>
+                    <div class="badge-row">
+                        <span class="badge java-badge">BACKEND</span>
+                        <span class="count">coming soon</span>
+                    </div>
+                    <p>JVM internals, concurrency, Spring Boot, design patterns.</p>
+                </div>
+            </a>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+[book]
+authors = ["Librarian"]
+language = "en"
+src = "src"
+title = "Rust Coding Questions and Answers"

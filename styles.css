@@ -1,0 +1,178 @@
+:root {
+    --bg-color: #11131c;
+    --card-bg: #1a1e2d;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a5b5; /* softer gray */
+    
+    /* Subject Colors */
+    --rust-color: #e35a35;
+    --js-color: #f7df1e;
+    --java-color: #f89820;
+    --docker-color: #2496ED;
+    --kafka-color: #00B39E;
+    
+    /* Badges */
+    --rust-badge-bg: rgba(227, 90, 53, 0.15);
+    --js-badge-bg: rgba(247, 223, 30, 0.15);
+    --java-badge-bg: rgba(248, 152, 32, 0.15);
+    --docker-badge-bg: rgba(36, 150, 237, 0.15);
+    --kafka-badge-bg: rgba(0, 179, 158, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #fff, #c2c9e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.rust-dot { background-color: var(--rust-color); box-shadow: 0 0 5px var(--rust-color); }
+.js-dot { background-color: var(--js-color); box-shadow: 0 0 5px var(--js-color); }
+.java-dot { background-color: var(--java-color); box-shadow: 0 0 5px var(--java-color); }
+.docker-dot { background-color: var(--docker-color); box-shadow: 0 0 5px var(--docker-color); }
+.kafka-dot { background-color: var(--kafka-color); box-shadow: 0 0 5px var(--kafka-color); }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: block;
+    border-left: 4px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card-content {
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.badge-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.count {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: auto;
+}
+
+/* Language specific styling */
+.rust-card { border-left-color: var(--rust-color); }
+.rust-card:hover { box-shadow: 0 8px 30px rgba(227, 90, 53, 0.15); }
+.rust-badge { background-color: var(--rust-badge-bg); color: var(--rust-color); }
+
+.js-card { border-left-color: var(--js-color); }
+.js-card:hover { box-shadow: 0 8px 30px rgba(247, 223, 30, 0.15); }
+.js-badge { background-color: var(--js-badge-bg); color: var(--js-color); }
+
+.java-card { border-left-color: var(--java-color); }
+.java-card:hover { box-shadow: 0 8px 30px rgba(248, 152, 32, 0.15); }
+.java-badge { background-color: var(--java-badge-bg); color: var(--java-color); }
+
+.docker-card { border-left-color: var(--docker-color); }
+.docker-card:hover { box-shadow: 0 8px 30px rgba(36, 150, 237, 0.15); }
+.docker-badge { background-color: var(--docker-badge-bg); color: var(--docker-color); }
+
+.kafka-card { border-left-color: var(--kafka-color); }
+.kafka-card:hover { box-shadow: 0 8px 30px rgba(0, 179, 158, 0.15); }
+.kafka-badge { background-color: var(--kafka-badge-bg); color: var(--kafka-color); }

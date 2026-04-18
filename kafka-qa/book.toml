@@ -1,0 +1,5 @@
+[book]
+authors = ["Librarian"]
+language = "en"
+src = "src"
+title = "Kafka Interview Questions and Answers"

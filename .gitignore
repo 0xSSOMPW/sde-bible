@@ -1,0 +1,9 @@
+# Build artifacts
+**/book/
+
+# OS files
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
