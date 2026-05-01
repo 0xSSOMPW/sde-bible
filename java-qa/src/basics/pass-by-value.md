@@ -2,9 +2,39 @@
 
 **Answer:**
 
-**Java is strictly pass-by-value.** Always. Even for objects.
+**Java is strictly pass-by-value.** Always — even for objects.
 
-The confusion: for objects, the **value being passed is the reference** (the address). The reference is copied — the object is not.
+In Java, everything is pass-by-value. No exceptions. What changes is **what the value represents**:
+
+* For primitives (`int`, `double`, etc.), the value is the actual data.
+* For objects, the value is a **reference to the object**.
+
+So when you pass an object to a method, Java **copies the reference** (not the object itself). That means:
+
+* You can mutate the object’s internal state inside the method.
+* You cannot change which object the caller’s variable refers to.
+
+### Example
+
+```java
+class Test {
+    int value;
+}
+
+void modify(Test obj) {
+    obj.value = 10; // affects original object
+}
+
+void reassign(Test obj) {
+    obj = new Test(); // does NOT affect original reference
+}
+```
+
+### Key takeaway
+
+> Java is pass-by-value; for objects, the value passed is a copy of the reference.
+
+---
 
 ### Primitives — Copy of Value
 ```java
