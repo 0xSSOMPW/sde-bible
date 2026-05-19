@@ -52,6 +52,7 @@
   - [Deadlock, Livelock, Starvation](./concurrency/deadlock.md)
   - [ThreadLocal & Pitfalls in Pools](./concurrency/threadlocal.md)
   - [ReentrantLock, ReadWriteLock, StampedLock](./concurrency/locks-reentrant.md)
+  - [Virtual Threads (Project Loom)](./concurrency/virtual-threads.md)
 
 ---
 
@@ -62,6 +63,8 @@
   - [Garbage Collection](./jvm/garbage-collection.md)
   - [Class Loading](./jvm/class-loading.md)
   - [JIT Compiler & Tiered Compilation](./jvm/jit-compiler.md)
+  - [Diagnosing Memory Leaks](./jvm/memory-leaks.md)
+  - [GC Tuning (G1, ZGC, Parallel)](./jvm/gc-tuning.md)
 
 ---
 
@@ -94,6 +97,12 @@
   - [@Async & @Scheduled](./spring/async-scheduling.md)
   - [Testing (Slices, Testcontainers)](./spring/testing.md)
   - [AOP & Proxies](./spring/aop.md)
+  - [Optimistic vs Pessimistic Locking (JPA)](./spring/locking-jpa.md)
+  - [Idempotent REST APIs (Idempotency-Key)](./spring/idempotency.md)
+  - [Circuit Breaker with Resilience4j](./spring/circuit-breaker.md)
+  - [HikariCP & Connection Pool Tuning](./spring/connection-pool.md)
+  - [Kafka with Spring Boot](./spring/kafka-integration.md)
+  - [Observability (Micrometer, Tracing)](./spring/observability.md)
 
 ---
 
@@ -105,3 +114,6 @@
   - [Design Patterns (Singleton, Factory, Builder)](./advanced/design-patterns.md)
   - [Reflection & MethodHandles](./advanced/reflection.md)
   - [Annotations & Custom Annotations](./advanced/annotations.md)
+  - [Records, Sealed Classes & Pattern Matching](./advanced/records-sealed-pattern.md)
+  - [GraalVM Native Image](./advanced/graalvm-native.md)
+  - [Switch Expressions & Pattern Switch](./advanced/switch-expressions.md)
