@@ -12,62 +12,39 @@
         <header>
             <h1>📚 Interview Prep Books</h1>
             <p class="subtitle">Pick a guide and start revising</p>
-            
+
             <div class="legend">
                 <span class="legend-item"><span class="dot rust-dot"></span> Systems</span>
                 <span class="legend-item"><span class="dot js-dot"></span> Frontend / Fullstack</span>
                 <span class="legend-item"><span class="dot java-dot"></span> Backend / Enterprise</span>
                 <span class="legend-item"><span class="dot docker-dot"></span> DevOps / Infra</span>
                 <span class="legend-item"><span class="dot kafka-dot"></span> Streaming / Data</span>
+                <span class="legend-item"><span class="dot sd-dot"></span> System Design</span>
             </div>
         </header>
 
         <main class="grid">
+            <!-- System Design Card -->
+            <a href="system-design-qa/book/index.html" class="card sd-card">
+                <div class="card-content">
+                    <h2>System Design</h2>
+                    <div class="badge-row">
+                        <span class="badge sd-badge">DESIGN</span>
+                        <span class="count">73 questions</span>
+                    </div>
+                    <p>CAP, sharding, replication, caching, messaging, consensus, saga, CQRS, rate limiting, and end-to-end design problems (URL shortener, chat, news feed, ride-share, payments, video, and more).</p>
+                </div>
+            </a>
+
             <!-- JS/TS Card -->
             <a href="js-ts-qa/book/index.html" class="card js-card">
                 <div class="card-content">
                     <h2>JS / TypeScript</h2>
                     <div class="badge-row">
                         <span class="badge js-badge">FRONTEND</span>
-                        <span class="count">16 questions</span>
+                        <span class="count">46 questions</span>
                     </div>
-                    <p>Closures, hoisting, event loop, type guards, utility types, React hooks, and more.</p>
-                </div>
-            </a>
-
-            <!-- Kafka Card -->
-            <a href="kafka-qa/book/index.html" class="card kafka-card">
-                <div class="card-content">
-                    <h2>Apache Kafka</h2>
-                    <div class="badge-row">
-                        <span class="badge kafka-badge">STREAMING</span>
-                        <span class="count">20 questions</span>
-                    </div>
-                    <p>Brokers, partitions, consumer groups, replication, exactly-once semantics, Connect, and monitoring.</p>
-                </div>
-            </a>
-
-            <!-- Docker Card -->
-            <a href="docker-qa/book/index.html" class="card docker-card">
-                <div class="card-content">
-                    <h2>Docker</h2>
-                    <div class="badge-row">
-                        <span class="badge docker-badge">DEVOPS</span>
-                        <span class="count">20 questions</span>
-                    </div>
-                    <p>Containers vs VMs, Dockerfiles, networking, volumes, Compose, security, and Kubernetes comparison.</p>
-                </div>
-            </a>
-
-            <!-- Rust Card -->
-            <a href="rust-qa/book/index.html" class="card rust-card">
-                <div class="card-content">
-                    <h2>Rust</h2>
-                    <div class="badge-row">
-                        <span class="badge rust-badge">SYSTEMS</span>
-                        <span class="count">4 questions</span>
-                    </div>
-                    <p>Ownership, borrowing, error handling, pattern matching.</p>
+                    <p>Event loop, closures, prototypes, async/await, generics, conditional types, React internals, performance, Node.js, Next.js.</p>
                 </div>
             </a>
 
@@ -77,9 +54,45 @@
                     <h2>Java</h2>
                     <div class="badge-row">
                         <span class="badge java-badge">BACKEND</span>
-                        <span class="count">28 questions</span>
+                        <span class="count">68 questions</span>
                     </div>
-                    <p>OOP, collections, concurrency, JVM internals, Stream API, Spring Boot, and design patterns.</p>
+                    <p>OOP, collections, concurrency, virtual threads, JVM internals, GC tuning, GraalVM, Spring Boot, Kafka integration, observability.</p>
+                </div>
+            </a>
+
+            <!-- Kafka Card -->
+            <a href="kafka-qa/book/index.html" class="card kafka-card">
+                <div class="card-content">
+                    <h2>Apache Kafka</h2>
+                    <div class="badge-row">
+                        <span class="badge kafka-badge">STREAMING</span>
+                        <span class="count">33 questions</span>
+                    </div>
+                    <p>Brokers, partitions, consumer groups, KRaft, tiered storage, schema evolution, streams, hot partitions, DLQ, multi-DC.</p>
+                </div>
+            </a>
+
+            <!-- Docker Card -->
+            <a href="docker-qa/book/index.html" class="card docker-card">
+                <div class="card-content">
+                    <h2>Docker</h2>
+                    <div class="badge-row">
+                        <span class="badge docker-badge">DEVOPS</span>
+                        <span class="count">34 questions</span>
+                    </div>
+                    <p>Namespaces, cgroups, BuildKit, multi-arch, distroless, rootless, storage drivers, resource limits, PID 1, health checks.</p>
+                </div>
+            </a>
+
+            <!-- Rust Card -->
+            <a href="rust-qa/book/index.html" class="card rust-card">
+                <div class="card-content">
+                    <h2>Rust</h2>
+                    <div class="badge-row">
+                        <span class="badge rust-badge">SYSTEMS</span>
+                        <span class="count">20 questions</span>
+                    </div>
+                    <p>Ownership, lifetimes, smart pointers, Send/Sync, async/Tokio, traits, closures, unsafe, anyhow/thiserror, testing.</p>
                 </div>
             </a>
         </main>

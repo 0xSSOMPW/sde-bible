@@ -10,13 +10,15 @@
     --java-color: #f89820;
     --docker-color: #2496ED;
     --kafka-color: #00B39E;
-    
+    --sd-color: #b66cf2;
+
     /* Badges */
     --rust-badge-bg: rgba(227, 90, 53, 0.15);
     --js-badge-bg: rgba(247, 223, 30, 0.15);
     --java-badge-bg: rgba(248, 152, 32, 0.15);
     --docker-badge-bg: rgba(36, 150, 237, 0.15);
     --kafka-badge-bg: rgba(0, 179, 158, 0.15);
+    --sd-badge-bg: rgba(182, 108, 242, 0.15);
 }
 
 * {
@@ -89,6 +91,7 @@ h1 {
 .java-dot { background-color: var(--java-color); box-shadow: 0 0 5px var(--java-color); }
 .docker-dot { background-color: var(--docker-color); box-shadow: 0 0 5px var(--docker-color); }
 .kafka-dot { background-color: var(--kafka-color); box-shadow: 0 0 5px var(--kafka-color); }
+.sd-dot { background-color: var(--sd-color); box-shadow: 0 0 5px var(--sd-color); }
 
 .grid {
     display: grid;
@@ -176,3 +179,7 @@ h1 {
 .kafka-card { border-left-color: var(--kafka-color); }
 .kafka-card:hover { box-shadow: 0 8px 30px rgba(0, 179, 158, 0.15); }
 .kafka-badge { background-color: var(--kafka-badge-bg); color: var(--kafka-color); }
+
+.sd-card { border-left-color: var(--sd-color); }
+.sd-card:hover { box-shadow: 0 8px 30px rgba(182, 108, 242, 0.18); }
+.sd-badge { background-color: var(--sd-badge-bg); color: var(--sd-color); }
