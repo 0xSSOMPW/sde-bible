@@ -12,7 +12,8 @@ learn/
 ├── kafka-qa/           # Apache Kafka interview notes
 ├── docker-qa/          # Docker & DevOps interview notes
 ├── rust-qa/            # Rust interview notes
-└── java-qa/            # Java interview notes (WIP)
+├── java-qa/            # Java interview notes
+└── system-design-qa/   # System Design interview notes
 ```
 
 ## Prerequisites
@@ -28,6 +29,9 @@ cargo install mdbook
 mdbook build js-ts-qa
 mdbook build rust-qa
 mdbook build java-qa
+mdbook build kafka-qa
+mdbook build docker-qa
+mdbook build system-design-qa
 ```
 
 ## Serving Locally

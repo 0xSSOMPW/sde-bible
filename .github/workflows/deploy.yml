@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir -p dist
           cp index.html styles.css dist/
-          for book in rust-qa js-ts-qa java-qa docker-qa kafka-qa; do
+          for book in rust-qa js-ts-qa java-qa docker-qa kafka-qa system-design-qa; do
             mdbook build "$book"
             mkdir -p "dist/$book"
             cp -r "$book/book" "dist/$book/book"
