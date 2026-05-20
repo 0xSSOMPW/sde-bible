@@ -1,0 +1,5 @@
+[book]
+authors = ["Librarian"]
+language = "en"
+src = "src"
+title = "System Design Interview Questions and Answers"
