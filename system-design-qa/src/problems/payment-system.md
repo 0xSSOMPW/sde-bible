@@ -96,7 +96,7 @@ Idempotency-Key: abc123-...
 
 Server stores the result keyed by `(merchant_id, idempotency_key)`. Replay returns cached response — no double-charge.
 
-See [Idempotent REST APIs](../../java-qa/src/spring/idempotency.md).
+See [Idempotent REST APIs](../reliability/idempotency.md).
 
 ### Concurrency on Hot Accounts
 

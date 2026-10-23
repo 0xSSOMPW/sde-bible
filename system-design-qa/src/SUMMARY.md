@@ -132,3 +132,22 @@
   - [Design a Metrics / Monitoring System](./problems/metrics-system.md)
   - [Design a Distributed Counter](./problems/distributed-counter.md)
   - [Design a Geo-Proximity Service (Yelp/Nearby)](./problems/geo-proximity.md)
+  - [Design BookMyShow (Ticket Booking)](./problems/bookmyshow.md)
+  - [Design a Car Rental / Booking System](./problems/car-booking.md)
+  - [Design Online Food Delivery (Swiggy/Zomato)](./problems/food-delivery.md)
+  - [Design an Online Shopping System (Amazon)](./problems/amazon-shopping.md)
+  - [Design an Inventory Management System](./problems/inventory-management.md)
+  - [Design an Online Stock Brokerage (Zerodha/Robinhood)](./problems/stock-brokerage.md)
+  - [Design Spotify (Music Streaming)](./problems/spotify.md)
+
+---
+
+# Low-Level Design (OOD)
+
+- [Object-Oriented Design Problems]()
+  - [Design a Parking Lot](./lld/parking-lot.md)
+  - [Design a Vending Machine](./lld/vending-machine.md)
+  - [Design an Elevator System](./lld/elevator.md)
+  - [Design Chess](./lld/chess.md)
+  - [Design Splitwise](./lld/splitwise.md)
+  - [Design Producer-Consumer (Bounded Buffer)](./lld/producer-consumer.md)
