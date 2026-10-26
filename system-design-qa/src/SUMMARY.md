@@ -139,6 +139,7 @@
   - [Design an Inventory Management System](./problems/inventory-management.md)
   - [Design an Online Stock Brokerage (Zerodha/Robinhood)](./problems/stock-brokerage.md)
   - [Design Spotify (Music Streaming)](./problems/spotify.md)
+  - [Design a Reward / Loyalty Points Service](./problems/reward-service.md)
 
 ---
 
